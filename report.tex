@@ -1,0 +1,69 @@
+\documentclass[a4paper, notitlepage, 11pt]{article}
+
+\input{includes-math}
+\input{includes-preamble}
+
+% for tables
+\usepackage{makecell}
+\usepackage{booktabs}
+\renewcommand\theadfont{\bfseries}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+% for table of contents
+% reduce line spacing between rows of the table of contents
+\usepackage{tocloft}
+\setlength\cftparskip{1pt}
+\setlength\cftbeforesecskip{2pt}
+\setlength\cftaftertoctitleskip{4pt}
+
+\begin{document}
+\input{title_page.tex}
+
+% table of contents
+% only include sections and sub-sections depth 2, just sections depth 1
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\section{Introduction and overview}
+
+It is suggested that this section should be about 2-3 pages long in total, and you may add any appropriate section or sub-section headings you wish to this list. You may reuse parts of your project proposal if appropriate (and in turn you may re-use parts of the mid-term project report in your final report). Describe the research question your project sets out to address and the practical investigation you have planned to address that question. Describe any technical work that you are undertaking as part of that investigation, such as the construction of data sets or software apparatus. Say what tools and techniques you are using for your investigation, experimentation, and evaluation of your work. You should list the specific deliverables you intend to produce during your project: design, documents, programs, questionnaires, databases, test plans, experimental designs, results, etc.
+
+\section{Progress to date}
+
+Again, it is suggested that you write about 2-3 pages and add an appropriate section heading and any necessary sub-headings. Describe the progress you have made so far i.e. what you have done. Be specific. Problems encountered or anticipated and steps taken/to be taken to solve them. Explain the supporting evidence you can provide for the work you have done, the documents that demonstrate your achievements, and include these documents as appendices.
+
+\section{Planned work}
+
+This section is expected to be about half to 1 page in length. Again, add an appropriate section heading and any necessary sub-headings. List the major tasks that need to be completed for the project to be a success, from start to finish (including any you have already completed) with target completion dates. Explain what each task means and what deliverables it will produce. Say how you will judge the quality of your project work and how you intend to evaluate the process you have gone through. Don't forget to include writing up the final report and preparing for the demonstration/presentation after submission.
+
+\section{Other details from MSc Project Handbook}
+
+\subsection{Bibliography}
+
+List any sources that you cite in your report. You should also list any sources that you have used, even if not cited directly. Use the Harvard system for your in-text citations, and for your references, producing one list, ordered by author surname (whether the material is drawn from books, journals, web pages, forums or blogs, or is a piece of software).
+
+Use can reference in latex as shown in this paragraph: Proident pariatur sunt ut fugiat exercitation irure velit nostrud dolore adipisicing dolore ipsum fugiat. Elit in proident minim in velit ut nulla Lorem fugiat Lorem incididunt exercitation. Quis veniam irure ea tempor voluptate pariatur excepteur sunt aliqua fugiat veniam ipsum \emph{value function}  \citep{Sutton2018}.  
+
+
+\subsection{Appendices}
+
+Include supporting evidence as appendices to your report. These should be numbered (Appendix 1, Appendix 2 etc.) and each should start on a new page and be given a title. Your tutor is not required to read the appendices but may refer to them for evidence to back up your claims. Typically, appendices will include evidence of design, investigative or practical work (e.g. ERMs, formal specifications, code, questionnaires, and so on). At this stage, it will mostly be work-in-progress, and it is fine for this to be handwritten. You may scan documents and include them with your submission if you wish, but if this will take a very long time do not attempt to do so: instead take the materials to your next project meeting. Your tutor will need to assure the other marker of your report that this evidence really exists.
+
+\section{Remaining sections}
+Write additional sections as appropriate for your project.
+
+
+
+
+\bibliographystyle{apalike2}
+\bibliography{refs}
+
+\clearpage
+\appendix 
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\input{appendices/math}
+
+\end{document}
