@@ -26,21 +26,50 @@
 \setlength\cftaftertoctitleskip{4pt}
 
 %%% Student and Project information  
-\newcommand{\projecttitle}{An Investigation into `The Importance of being Earnest'}                                                         
+\newcommand{\projecttitle}{An Investigation into the themes of `The Importance of being Earnest'}                                                         
 \newcommand{\studentname}{Joe Bloggs}
 \newcommand{\studentnumber}{SRN 12345678}
 \newcommand{\supervisorname}{Joe Madge}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 %%% Title section 
-\newcommand{\doctype}{Detailed Project Proposal}
+\newcommand{\doctype}{Interim Project Report}
 \newcommand{\coursecode}{7COM1039}
 \newcommand{\coursedescr}{MSc Project : Adv Computing}
-
+\newcommand{\reportdate}{15 July 2022}
 
 
 \begin{document}
-\input{title_page.tex}
+\thispagestyle{empty}
+% title page
 
+\begin{center}
+    \vspace{2cm}
+    \includegraphics[scale=0.2]{herts-logo-black.png} \\[5cm]
+    
+    \HRule \\[0.4cm]
+    \huge{ \bfseries \projecttitle \\[0.15cm] }
+    \HRule \\[1.5cm]
+    
+    \textsf{\LARGE{UNIVERSITY OF HERTFORDSHIRE\\
+    School of Physics, Engineering and Computer Science} \\[2cm]}
+    \LARGE{\studentname \enspace : \enspace \studentnumber}\\
+    \large{\reportdate } \\[4cm]
+    
+\end{center}
+
+\large{\textbf{Course: }\coursedescr\\
+        \coursecode \enspace : \enspace \doctype \\
+    \textbf{Student Name:} \studentname \\
+    \textbf{Student Number:} \studentnumber \\
+    \textbf{Supervised by (if known):} \supervisorname 
+}
+
+
+
+%-----------------------------------------------------------
+\clearpage
+\setcounter{page}{1}
 % table of contents
 % only include sections and sub-sections depth 2, just sections depth 1
 \setcounter{tocdepth}{1}
