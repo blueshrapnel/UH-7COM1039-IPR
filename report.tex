@@ -12,12 +12,31 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
+% to create the title box
+\usepackage{tcolorbox}
+\tcbset{colback=white, colframe=black, left=2mm, right=2mm, top=0mm
+}
+
+
 % for table of contents
 % reduce line spacing between rows of the table of contents
 \usepackage{tocloft}
 \setlength\cftparskip{1pt}
 \setlength\cftbeforesecskip{2pt}
 \setlength\cftaftertoctitleskip{4pt}
+
+%%% Student and Project information  
+\newcommand{\projecttitle}{An Investigation into `The Importance of being Earnest'}                                                         
+\newcommand{\studentname}{Joe Bloggs}
+\newcommand{\studentnumber}{SRN 12345678}
+\newcommand{\supervisorname}{Joe Madge}
+
+%%% Title section 
+\newcommand{\doctype}{Detailed Project Proposal}
+\newcommand{\coursecode}{7COM1039}
+\newcommand{\coursedescr}{MSc Project : Adv Computing}
+
+
 
 \begin{document}
 \input{title_page.tex}
@@ -45,7 +64,7 @@ This section is expected to be about half to 1 page in length. Again, add an app
 
 List any sources that you cite in your report. You should also list any sources that you have used, even if not cited directly. Use the Harvard system for your in-text citations, and for your references, producing one list, ordered by author surname (whether the material is drawn from books, journals, web pages, forums or blogs, or is a piece of software).
 
-Use can reference in latex as shown in this paragraph: Proident pariatur sunt ut fugiat exercitation irure velit nostrud dolore adipisicing dolore ipsum fugiat. Elit in proident minim in velit ut nulla Lorem fugiat Lorem incididunt exercitation. Quis veniam irure ea tempor voluptate pariatur excepteur sunt aliqua fugiat veniam ipsum \emph{value function}  \citep{Sutton2018}.  
+Use can reference in latex as shown in this paragraph: Proident pariatur sunt ut fugiat exercitation irure velit nostrud dolore adipisicing dolore ipsum fugiat. Elit in proident minim in velit ut nulla Lorem fugiat Lorem incididunt exercitation. Quis veniam irure ea tempor voluptate pariatur excepteur sunt aliqua fugiat veniam ipsum \emph{value function}  \citep{Sutton2018}.
 
 
 \subsection{Appendices}
